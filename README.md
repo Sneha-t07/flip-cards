@@ -38,7 +38,7 @@ This will launch the app at [http://localhost:3000](http://localhost:3000) in yo
 - When you match all pairs, you win!
 - Click "Reset Game" to start over.
 
-- 
+  
 ## Project Structure
 
 ```
