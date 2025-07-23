@@ -1,0 +1,75 @@
+.app {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.card {
+  perspective: 600px;
+  width: 80px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  background: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.card-front {
+  background: #007bff;
+  color: #fff;
+}
+
+.card-back {
+  background: #fff;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #28a745;
+}
