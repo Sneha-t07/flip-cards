@@ -1,5 +1,5 @@
 # Flip-cards memory game
-A simple React game where you flip cards to find matching pairs. This project is great for beginners learning React state, effects, and component logic.
+A simple React game where you flip cards to find matching pairs.
 
 **Getting Started**
 
